@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slowave</title>
+    <link rel="stylesheet/less" type="text/less" href="css/style.less">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.5/less.min.js"></script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/app.js"></script>
+    <!-- [if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <! [endif]-->    
+</head>
+
+
+<body ng-app="slowave_app">
+    <header>
+        <div class="menu">
+            <div class="menu-content">
+                <div class="logo">Slowave</div>
+                <nav>
+                    <span class="icon-menu"></span>
+                    <ul>
+                        <li>Home</li>
+                        <li>Pages</li>
+                        <li>Journal</li>
+                        <li>Portfolio</li>
+                        <li>Features</li>
+                        <li>Contact</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="slogan-text">
+                <span>We are digital & branding agency based in london.</span>
+                <span>We love to turn great ideas into beautiful products.</span>  
+                <a href="#portfolio" class="portfolio-link">See portfolio</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="info-section" ng-controller="InfoSectionController" ng-init="i=0">
+        <div class="info-element-description">
+            <h2 class="info-title"><span>{{ data[i].title[0] }}</span>{{ data[i].title[1] }}</h2>
+            <div class="info-description">{{ data[i].description }}</div>
+        </div>
+        <div class="info-icons">
+            <div class="info-icon" ng-click="i=0">
+                <div class="svg-container">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                    <svg
+                       xmlns:dc="http://purl.org/dc/elements/1.1/"
+                       xmlns:cc="http://creativecommons.org/ns#"
+                       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                       xmlns:svg="http://www.w3.org/2000/svg"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="80"
+                       height="113"
+                       class="icon"
+                       id="icon1">
+                      <g
+                         id="layer1"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none"
+                           d="m 42.350238,985.95072 c 12.80168,0.41577 17.06891,10.39405 14.9353,22.86688 -2.13362,8.3152 -8.53445,10.3941 -8.53445,16.6305 0,3.4647 0,9.5625 0,10.394 -0.85345,0 -1.56465,0 -2.98706,0 0.21639,0.6719 0.13513,1.3727 0,2.0789 -1.38762,0.7117 -5.36883,0.7432 -6.82757,0 -0.10547,-0.7135 -0.0708,-1.3997 0,-2.0789 -1.4224,0 -1.70688,0 -2.98705,0 0,-0.4157 0,-6.9293 0,-10.394 0,-6.2364 -6.40084,-8.3153 -8.53446,-16.6305 -2.13361,-12.47283 2.13362,-22.45111 14.93529,-22.86688 z"
+                           id="path1"
+                          />
+                        <path
+                           style="fill:#dadada;fill-opacity:1;fill-rule:nonzero;stroke:#dadada;stroke-width:0.01197446;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.463298,947.63084 c -0.18729,-0.0169 -0.47497,-0.0819 -0.68255,-0.1543 -0.98332,-0.3428 -1.73114,-1.22155 -1.88584,-2.216 -0.0411,-0.26416 -0.0359,-0.60894 0.0133,-0.86731 0.0994,-0.52339 0.35834,-0.99028 0.78418,-1.41405 0.42952,-0.42744 0.91219,-0.69979 1.44765,-0.81688 0.21682,-0.0474 0.36582,-0.0601 0.6243,-0.053 0.43084,0.0117 0.80146,0.10408 1.21977,0.30403 0.29409,0.14057 0.5325,0.30865 0.76122,0.53664 0.50301,0.5014 0.79138,1.10556 0.84353,1.76724 0.0504,0.63937 -0.19876,1.34099 -0.6801,1.9153 -0.37647,0.44917 -0.85078,0.7463 -1.45353,0.91053 -0.25205,0.0687 -0.37629,0.0852 -0.66857,0.0891 -0.14818,0.002 -0.29368,0.002 -0.32331,-0.002 l 0,0 z"
+                           id="path2"
+                          />
+                      </g>
+                      <g
+                         id="layer2"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 35.862208,1024.2207 12.97806,0"
+                           id="path3"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.91808891;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1024.207 0,-18.2782"
+                           id="path4"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1007.684 c 0,0 1.09365,-2.9164 4.37462,-3.6455 3.28097,-0.7291 1.09365,2.9164 0,3.6455 -0.85793,0.572 -4.37462,1.0937 -4.37462,1.0937 z"
+                           id="path5"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.669378,1007.6961 c 0,0 -1.09357,-2.9168 -4.37463,-3.6455 -3.28175,-0.7289 -1.06546,2.9043 0,3.6455 0.68569,0.4771 4.37463,1.0937 4.37463,1.0937 z"
+                           id="path6"
+                          />
+                      </g>
+                    </svg>
+                </div>
+                Creative ideas
+            </div>
+            <div class="info-icon" ng-click="i=1">
+                <div class="svg-container">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                    <svg
+                       xmlns:dc="http://purl.org/dc/elements/1.1/"
+                       xmlns:cc="http://creativecommons.org/ns#"
+                       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                       xmlns:svg="http://www.w3.org/2000/svg"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="80"
+                       height="113"
+                       class="icon"
+                       id="icon2">
+                      <g
+                         id="layer1"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none"
+                           d="m 42.350238,985.95072 c 12.80168,0.41577 17.06891,10.39405 14.9353,22.86688 -2.13362,8.3152 -8.53445,10.3941 -8.53445,16.6305 0,3.4647 0,9.5625 0,10.394 -0.85345,0 -1.56465,0 -2.98706,0 0.21639,0.6719 0.13513,1.3727 0,2.0789 -1.38762,0.7117 -5.36883,0.7432 -6.82757,0 -0.10547,-0.7135 -0.0708,-1.3997 0,-2.0789 -1.4224,0 -1.70688,0 -2.98705,0 0,-0.4157 0,-6.9293 0,-10.394 0,-6.2364 -6.40084,-8.3153 -8.53446,-16.6305 -2.13361,-12.47283 2.13362,-22.45111 14.93529,-22.86688 z"
+                           id="path1"
+                          />
+                        <path
+                           style="fill:#dadada;fill-opacity:1;fill-rule:nonzero;stroke:#dadada;stroke-width:0.01197446;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.463298,947.63084 c -0.18729,-0.0169 -0.47497,-0.0819 -0.68255,-0.1543 -0.98332,-0.3428 -1.73114,-1.22155 -1.88584,-2.216 -0.0411,-0.26416 -0.0359,-0.60894 0.0133,-0.86731 0.0994,-0.52339 0.35834,-0.99028 0.78418,-1.41405 0.42952,-0.42744 0.91219,-0.69979 1.44765,-0.81688 0.21682,-0.0474 0.36582,-0.0601 0.6243,-0.053 0.43084,0.0117 0.80146,0.10408 1.21977,0.30403 0.29409,0.14057 0.5325,0.30865 0.76122,0.53664 0.50301,0.5014 0.79138,1.10556 0.84353,1.76724 0.0504,0.63937 -0.19876,1.34099 -0.6801,1.9153 -0.37647,0.44917 -0.85078,0.7463 -1.45353,0.91053 -0.25205,0.0687 -0.37629,0.0852 -0.66857,0.0891 -0.14818,0.002 -0.29368,0.002 -0.32331,-0.002 l 0,0 z"
+                           id="path2"
+                          />
+                      </g>
+                      <g
+                         id="layer2"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 35.862208,1024.2207 12.97806,0"
+                           id="path3"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.91808891;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1024.207 0,-18.2782"
+                           id="path4"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1007.684 c 0,0 1.09365,-2.9164 4.37462,-3.6455 3.28097,-0.7291 1.09365,2.9164 0,3.6455 -0.85793,0.572 -4.37462,1.0937 -4.37462,1.0937 z"
+                           id="path5"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.669378,1007.6961 c 0,0 -1.09357,-2.9168 -4.37463,-3.6455 -3.28175,-0.7289 -1.06546,2.9043 0,3.6455 0.68569,0.4771 4.37463,1.0937 4.37463,1.0937 z"
+                           id="path6"
+                          />
+                      </g>
+                    </svg>
+                </div>
+                Rapid solution
+            </div>
+            <div class="info-icon" ng-click="i=2">
+                <div class="svg-container">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                    <svg
+                       xmlns:dc="http://purl.org/dc/elements/1.1/"
+                       xmlns:cc="http://creativecommons.org/ns#"
+                       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                       xmlns:svg="http://www.w3.org/2000/svg"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="80"
+                       height="113"
+                       class="icon"
+                       id="icon3">
+                      <g
+                         id="layer1"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none"
+                           d="m 42.350238,985.95072 c 12.80168,0.41577 17.06891,10.39405 14.9353,22.86688 -2.13362,8.3152 -8.53445,10.3941 -8.53445,16.6305 0,3.4647 0,9.5625 0,10.394 -0.85345,0 -1.56465,0 -2.98706,0 0.21639,0.6719 0.13513,1.3727 0,2.0789 -1.38762,0.7117 -5.36883,0.7432 -6.82757,0 -0.10547,-0.7135 -0.0708,-1.3997 0,-2.0789 -1.4224,0 -1.70688,0 -2.98705,0 0,-0.4157 0,-6.9293 0,-10.394 0,-6.2364 -6.40084,-8.3153 -8.53446,-16.6305 -2.13361,-12.47283 2.13362,-22.45111 14.93529,-22.86688 z"
+                           id="path1"
+                          />
+                        <path
+                           style="fill:#dadada;fill-opacity:1;fill-rule:nonzero;stroke:#dadada;stroke-width:0.01197446;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.463298,947.63084 c -0.18729,-0.0169 -0.47497,-0.0819 -0.68255,-0.1543 -0.98332,-0.3428 -1.73114,-1.22155 -1.88584,-2.216 -0.0411,-0.26416 -0.0359,-0.60894 0.0133,-0.86731 0.0994,-0.52339 0.35834,-0.99028 0.78418,-1.41405 0.42952,-0.42744 0.91219,-0.69979 1.44765,-0.81688 0.21682,-0.0474 0.36582,-0.0601 0.6243,-0.053 0.43084,0.0117 0.80146,0.10408 1.21977,0.30403 0.29409,0.14057 0.5325,0.30865 0.76122,0.53664 0.50301,0.5014 0.79138,1.10556 0.84353,1.76724 0.0504,0.63937 -0.19876,1.34099 -0.6801,1.9153 -0.37647,0.44917 -0.85078,0.7463 -1.45353,0.91053 -0.25205,0.0687 -0.37629,0.0852 -0.66857,0.0891 -0.14818,0.002 -0.29368,0.002 -0.32331,-0.002 l 0,0 z"
+                           id="path2"
+                          />
+                      </g>
+                      <g
+                         id="layer2"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 35.862208,1024.2207 12.97806,0"
+                           id="path3"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.91808891;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1024.207 0,-18.2782"
+                           id="path4"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1007.684 c 0,0 1.09365,-2.9164 4.37462,-3.6455 3.28097,-0.7291 1.09365,2.9164 0,3.6455 -0.85793,0.572 -4.37462,1.0937 -4.37462,1.0937 z"
+                           id="path5"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.669378,1007.6961 c 0,0 -1.09357,-2.9168 -4.37463,-3.6455 -3.28175,-0.7289 -1.06546,2.9043 0,3.6455 0.68569,0.4771 4.37463,1.0937 4.37463,1.0937 z"
+                           id="path6"
+                          />
+                      </g>
+                    </svg>
+                </div>
+                Magic touch
+            </div>
+            <div class="info-icon" ng-click="i=3">
+                <div class="svg-container">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                    <svg
+                       xmlns:dc="http://purl.org/dc/elements/1.1/"
+                       xmlns:cc="http://creativecommons.org/ns#"
+                       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                       xmlns:svg="http://www.w3.org/2000/svg"
+                       xmlns="http://www.w3.org/2000/svg"
+                       width="80"
+                       height="113"
+                       class="icon"
+                       id="icon4">
+                      <g
+                         id="layer1"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none"
+                           d="m 42.350238,985.95072 c 12.80168,0.41577 17.06891,10.39405 14.9353,22.86688 -2.13362,8.3152 -8.53445,10.3941 -8.53445,16.6305 0,3.4647 0,9.5625 0,10.394 -0.85345,0 -1.56465,0 -2.98706,0 0.21639,0.6719 0.13513,1.3727 0,2.0789 -1.38762,0.7117 -5.36883,0.7432 -6.82757,0 -0.10547,-0.7135 -0.0708,-1.3997 0,-2.0789 -1.4224,0 -1.70688,0 -2.98705,0 0,-0.4157 0,-6.9293 0,-10.394 0,-6.2364 -6.40084,-8.3153 -8.53446,-16.6305 -2.13361,-12.47283 2.13362,-22.45111 14.93529,-22.86688 z"
+                           id="path1"
+                          />
+                        <path
+                           style="fill:#dadada;fill-opacity:1;fill-rule:nonzero;stroke:#dadada;stroke-width:0.01197446;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.463298,947.63084 c -0.18729,-0.0169 -0.47497,-0.0819 -0.68255,-0.1543 -0.98332,-0.3428 -1.73114,-1.22155 -1.88584,-2.216 -0.0411,-0.26416 -0.0359,-0.60894 0.0133,-0.86731 0.0994,-0.52339 0.35834,-0.99028 0.78418,-1.41405 0.42952,-0.42744 0.91219,-0.69979 1.44765,-0.81688 0.21682,-0.0474 0.36582,-0.0601 0.6243,-0.053 0.43084,0.0117 0.80146,0.10408 1.21977,0.30403 0.29409,0.14057 0.5325,0.30865 0.76122,0.53664 0.50301,0.5014 0.79138,1.10556 0.84353,1.76724 0.0504,0.63937 -0.19876,1.34099 -0.6801,1.9153 -0.37647,0.44917 -0.85078,0.7463 -1.45353,0.91053 -0.25205,0.0687 -0.37629,0.0852 -0.66857,0.0891 -0.14818,0.002 -0.29368,0.002 -0.32331,-0.002 l 0,0 z"
+                           id="path2"
+                          />
+                      </g>
+                      <g
+                         id="layer2"
+                         transform="translate(0,-939.36218)">
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.72910422;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 35.862208,1024.2207 12.97806,0"
+                           id="path3"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.91808891;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1024.207 0,-18.2782"
+                           id="path4"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.697568,1007.684 c 0,0 1.09365,-2.9164 4.37462,-3.6455 3.28097,-0.7291 1.09365,2.9164 0,3.6455 -0.85793,0.572 -4.37462,1.0937 -4.37462,1.0937 z"
+                           id="path5"
+                          />
+                        <path
+                           style="fill:none;stroke:#dadada;stroke-width:0.87492508;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+                           d="m 42.669378,1007.6961 c 0,0 -1.09357,-2.9168 -4.37463,-3.6455 -3.28175,-0.7289 -1.06546,2.9043 0,3.6455 0.68569,0.4771 4.37463,1.0937 4.37463,1.0937 z"
+                           id="path6"
+                          />
+                      </g>
+                    </svg>
+                </div>
+                Award winning
+            </div>
+        </div>
+    </section>
+
+    <section class="we-do">
+        TEXT
+    </section>
+
+    <section class="projects-section">
+        TEXT
+    </section>
+
+    <section class="articles-section">
+        TEXT
+    </section>
+
+    <section class="steps-section">
+        TEXT
+    </section>
+
+    <section class="section-feedback">
+        TEXT
+    </section>
+
+    <footer>
+        <div class="info-header">
+            TEXT
+        </div>
+        <div class="copyrights">
+            TEXT
+        </div>
+    </footer>
+
+</body>
+
+</html>
